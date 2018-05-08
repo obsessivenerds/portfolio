@@ -151,8 +151,8 @@ h2 {
   justify-content: center;
   display: flex;
   align-items: center;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .project-grid {
@@ -187,10 +187,10 @@ h2 {
   justify-content: center;
   display: flex;
   align-items: center;
-  padding-top: 0px;
+  padding-top: 0;
   font-size: 20px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .link-note {
