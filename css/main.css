@@ -48,12 +48,6 @@ h1 {
   text-transform: uppercase;
 }
 
-h2 {
-  font-size: 32px;
-  color: #7d97ad;
-  font-weight: 100;
-}
-
 h4 {
   text-align: right;
   color: #2d3c49;
@@ -130,6 +124,12 @@ h4 {
   max-width: 1100px;
 }
 
+h2 {
+  font-size: 32px;
+  color: #7d97ad;
+  font-weight: 100;
+}
+
 /*About Me Area*/
 
 .about-me {
@@ -142,6 +142,18 @@ h4 {
 }
 
 /*Featured Work Area*/
+
+.project-name {
+  font-size: 20px;
+  color: #7d97ad;
+  font-weight: 100;
+  text-transform: uppercase;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 
 .project-grid {
   display: flex;
@@ -175,14 +187,17 @@ h4 {
   justify-content: center;
   display: flex;
   align-items: center;
-  padding-top: 15px;
+  padding-top: 0px;
   font-size: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .link-note {
   justify-content: center;
   display: flex;
   align-items: center;
+  margin-top: 5px;
 }
 
 /*Footer*/
