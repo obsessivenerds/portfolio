@@ -1,0 +1,247 @@
+/*Global Settings*/
+body {
+  font-size: 16px;
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+img, object, embed, video {
+  max-width: 100%;
+}
+
+/*Flex-wrap settings across all items*/
+
+.container {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 100%;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  max-width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Header section */
+
+header {
+  max-width: 1100px;
+  width: 100%;
+  position: relative;
+}
+
+h1 {
+  font-size: 48px;
+  text-align: right;
+  color: #2d3c49;
+  margin: auto;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 32px;
+  color: #7d97ad;
+  font-weight: 100;
+}
+
+h4 {
+  text-align: right;
+  color: #2d3c49;
+  margin: auto;
+  text-transform: uppercase;
+}
+
+.header-image {
+  width: 100%;
+  align-self: flex-end;
+  object-fit: contain;
+  display:flex;
+  align-items:center;
+  height:150px;
+}
+/* I finally figured out how to get my header to display correctly by using http://howtocenterincss.com/! */
+.name {
+  font-size: 48px;
+  text-align: right;
+  color: #2d3c49;
+  margin: auto;
+  font-weight: 100;
+  text-transform: uppercase;
+  display:flex;
+  justify-content:flex-end;
+  align-items:flex-end;
+}
+
+.title {
+  text-align: right;
+  color: #2d3c49;
+  margin: auto;
+  text-transform: uppercase;
+  display:flex;
+  justify-content:flex-end;
+  align-items:flex-end;
+}
+
+.header-wrapper{
+  width: 100%;
+  grid-template-columns: 200px 1200px;
+}
+
+.header-text {
+  width: 80%;
+}
+
+.header-border {
+  border-width: 0 0 2px 0;
+  border-style: solid;
+  border-color: #7d97ad;
+}
+
+/*main image*/
+
+.hero {
+  width: 100%;
+  max-width: 1100px;
+  position: relative;
+  border: solid;
+  border-color: #2d3c49;
+  border-radius: 4px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*Main Body*/
+
+.content {
+  margin: auto;
+  width: 100%;
+  max-width: 1100px;
+}
+
+/*About Me Area*/
+
+.about-me {
+  border: solid;
+  border-color: #2d3c49;
+  border-radius: 4px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px 10px 20px 10px;
+}
+
+/*Featured Work Area*/
+
+.project-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  width: 400px;
+  height: 275px;
+  padding: 10px 20px;
+  border: 1px solid #2d3c49;
+  border-radius: 4px;
+  background-color: #fff;
+  margin: 30px;
+
+}
+.project-card > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.project-link {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+  font-size: 20px;
+}
+
+.link-note {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+/*Footer*/
+footer {
+  max-width: 1100px;
+  width: 100%;
+  justify-content: center;
+  margin: auto;
+}
+
+/*Media queries*/
+
+/*Google Nexus 5*/
+@media screen and (max-width: 360px) {
+  body {
+    width: 100% ;
+  }
+  header {
+    max-width: 360px;
+  }
+  .container {
+    max-width: 360px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .wrapper {
+    grid-template-columns: 30% 70%;
+    max-width: 360px;
+  }
+  .header-image {
+   height: 48px;
+   margin-right: 0.5em;
+ }
+ .name, .title {
+   margin-left: 0;
+   font-size: 2em;
+   vertical-align: bottom;
+ }
+ .thumbnail {
+   width: 40em;
+ }
+ .hero {
+   max-width: 360px;
+   width: 100%;
+ }
+}
+
+/*Apple iPad*/
+@media screen and (min-width: 361px) and (max-width: 768px) {
+  thumbnail {
+    width: 60em;
+  }
+  header {
+    max-width: 768px;
+  }
+  .wrapper {
+    grid-template-columns: 30% 70%;
+  }
+}
+
+/*Desktop*/
+@media screen and (min-width: 769px) {
+
+}
